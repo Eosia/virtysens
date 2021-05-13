@@ -1,0 +1,126 @@
+/* scss du footer */
+
+footer {
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto;
+    min-height: 15vh !important;
+    background-color: #000 !important; 
+    border-top: 5px solid#E09813;
+    position: relative !important;
+    bottom: 0 !important;
+
+    .footer-container {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: auto;
+
+        .footer-copyright {
+            font-family: $font4;
+            letter-spacing: 0.3em;
+        }
+        .social-menu {
+            height: auto;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    footer {
+        background-position: bottom !important;
+
+        .footer-container {
+            display: flex;
+            flex-direction: row !important;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            .footer-copyright {
+                font-size: 1em;
+            }
+        }
+    
+    }
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    footer {    
+        .footer-container {
+    
+
+        }
+    
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    footer {    
+        .footer-container {
+    
+
+        }
+    
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    footer {
+        .footer-container {
+    
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            * {
+                padding: 5px 0 5px 0;
+            }
+
+            .social-menu {
+
+
+                .social-link {
+                    font-size: 36px;
+                }
+            }
+        
+        }    
+    }
+}
+
+// Small devices (portrait phones, 300px and up) /*ok*/
+@media (max-width: 575.98px) { 
+    footer {
+        .footer-container {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            * {
+                padding: 2px 0;
+            }
+
+            .social-menu {
+                height: auto;
+                margin: auto;
+
+            }
+        
+            .footer-up {
+                margin-bottom: 0px !important;
+            }
+        }    
+    }
+    
+}

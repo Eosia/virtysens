@@ -1,0 +1,880 @@
+{# page produits #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Virtysens | Nos produits{% endblock %}
+
+{% block body %}
+    <!--main start-->
+    <main class="produits container-fluid mb-5">
+
+        <!--section 1 avec video full largeur start-->
+        <section class="produits-section-1 row py-0">
+
+            <!--bandeau vidéo start-->
+            <div class="embed-responsive embed-responsive-16by9 mx-auto text-center col-12 col-sm-12 col-md-11 col-lg-10 col-xl-9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fg68XhJIsaQ?rel=0&autoplay=1&mute=1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen>
+                </iframe>
+            </div>
+            <!--bandeau vidéo stop-->
+        </section>
+        <!--section 1 avec video full largeur stop-->
+
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+        <!--section 2 avec texte et machine start-->
+        <section class="produits-section-2 container-fluid mx-auto mt-2">
+
+            <div class="container mx-auto d-flex flex-column justify-content-between align-items-between">
+
+                <!--logo made in france et titre start-->
+                <div class="row d-flex justify-content-start align-items-center">
+                    <figure class="accueil-section-1-item col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 mx-auto">
+                        <img src="{{ asset('assets/img/made-in-france.png') }}" loading="lazy" alt="Virtysens a été élaborré et entièrement fabriqué en France"
+                             title="Virtysens a été élaborré et entièrement fabriqué en France"
+                             class="img-fluid">
+                        <figcaption class="hidden">Virtysens a été élaborré et entièrement fabriqué en France</figcaption>
+                    </figure>
+
+                    <h3 class="mx-auto text-center col-8 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+                        Notre produit, <strong>une expérience</strong> <br>unique et immersive pour vos <strong>sens</strong> !
+                    </h3>
+                </div>
+                <!--logo made in france et titre stop-->
+
+            </div>
+
+            <div class="container mx-auto d-flex flex-column justify-content-center align-items-center">
+
+                <!--contenu section 1 produits start-->
+                <div class="row d-flex justify-content-center align-items-between mx-auto">
+                    <!--colone gauche avec texte start-->
+                    <div class="produits-item-texte col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto">
+
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 mx-auto my-auto">
+                            L'appareil possède un anneau avec 5 boitiers répartis sur la
+                            structure
+                            <span class="font-weight-bolder">permettant de diffuser à 360 degrés</span>
+                            du vent, de la chaleur, du froid et des odeurs.
+                        </p>
+                        <br><br>
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 mx-auto my-4">
+                            Ces sensations sont combinées avec des
+                            vidéos à 180°, 360°, et en 2D ou en 3D visualisées via le casque
+                            de réalité virtuelle.
+                        </p>
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 mx-auto my-4">
+                            <span class="font-weight-bolder">Accessible pour tout public</span> :
+                            enfants, jeunes adultes, adultes et
+                            seniors, souffrant de handicaps ou immobilisés
+                            dans des chambres d'hôpital ou d’établissement médicalisé.
+                        </p>
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 mx-auto my-4">
+                            L’appareil est conçu pour être positionné
+                            <span class="font-weight-bolder">au-dessus d’un lit ou d’un fauteuil</span>
+                            quelle qu'en soit la taille.
+                        </p>
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 mx-auto my-4">
+                            Il est facilement transportable dans les chambres ou dans
+                            les salles communes grâce à ses roulettes et à son
+                            <span class="font-weight-bolder">anneau repliable dans différentes positions</span>.
+                        </p>
+                    </div>
+                    <!--colone gauche avec texte stop-->
+                    <!--colone droite avec photo de la machine et cta start-->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto my-auto">
+
+                        <!--image machine start-->
+                        <figure class="col-11 col-sm-11 col-md-12 col-lg-12 col-xl-12 mx-auto">
+                            <img src="{{ asset('assets/img/produits-s1-p1.jpg') }}" loading="lazy" alt="photo de l’appareil se range et se déplace facilement"
+                                 title="L’appareil se range et se déplace facilement" class="img-fluid border border-dark rounded">
+                            <figcaption class="hidden">L’appareil se range et se déplace facilement</figcaption>
+                        </figure>
+                        <!--image machine end-->
+                        <!--cta start-->
+                        <div class="mx-auto text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="btn-cta mx-auto mt-1 text-center">
+                                <a href="{{ path('contact') }}" target="_blank" rel="noopener noreferrer nofollow"
+                                   class="btn-cta btn btn-info btn-md mx-auto text-center text-white col-10 col-sm-8 col-md-12 col-lg-8 col-xl-8 mt-2 text-uppercase">
+                                    JE SOUHAITE UN DEVIS</a>
+                            </div>
+                        </div>
+                        <!--cta stop-->
+                    </div>
+                    <!--colone droite avec photo de la machine et cta stop-->
+                </div>
+                <!--contenu section 1 produits stop-->
+
+            </div>
+
+
+        </section>
+        <!--section 2 avec texte et machine start-->
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+        <!--ligne de separation doree start-->
+        <div class="ligne-or">
+        </div>
+        <!--ligne de separation doree stop-->
+
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+        <!--section 3 les solutions virtysens start-->
+        <!--container global de la section pleine largeur-->
+        <section class="produits-section-3 container-fluid mx-auto mt-2">
+            <!--container boxed du contenu start-->
+            <div class="container-fluid mx-auto">
+                <div class="row mx-auto">
+                    <!--titre section 3 start-->
+                    <h3 class="mx-auto text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                        Voyagez à Paris ou dans le désert, ressentez le froid ou la chaleur, faites-vous surprendre par des odeurs de fleurs… peu importe où vous êtes !
+                    </h3>
+                </div>
+                <!--titre section 3 stop-->
+
+                <!-- ---------------------------------------------------EHPAD--------------------------------------------------------------------- -->
+                <div class="container-fluid mx-auto">
+                    <!--solution 1 ehpad start-->
+                    <div class="row mx-auto my-5 d-flex justify-content-around align-items-between">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-6 mx-auto d-flex flex-column justify-content-center align-items-center">
+                            <!--image solution en ehpad start-->
+                            <figure class="col-12 col-sm-9 col-md-10 col-lg-12 col-xl-8 mx-auto">
+                                <img src="{{ asset('assets/img/ehpad.jpg') }}" loading="lazy"
+                                     alt="L’appareil VirtySens permet de se reconnecter à ses sens et à des souvenirs oubliés. Il permet également de visualiser en 2D ou 3D, en 180 ou 360 degrés."
+                                     title="L’appareil VirtySens permet de se reconnecter à ses sens et à des souvenirs oubliés. Il permet également de visualiser en 2D ou 3D, en 180 ou 360 degrés."
+                                     class="img-fluid border border-dark rounded">
+                                <figcaption class="hidden">L’appareil VirtySens permet de se reconnecter à ses sens et à des souvenirs oubliés. Il permet également de visualiser en 2D ou 3D, en 180 ou 360 degrés.</figcaption>
+                            </figure>
+                            <!--image solution en ehpad  end-->
+                        </div>
+
+                        <!-- ------------------------------------------------------------------------------------------------- -->
+                        <div class="produits-item-texte row col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 mx-auto my-auto text-left">
+                            <h4 class="text-left col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                La solution pour les <strong>EHPAD</strong>
+                            </h4>
+                            <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto text-left">
+                                La combinaison des sensations de chaud ou de froid, avec la diffusion d’odeurs,
+                                <span class="font-weight-bolder">vont permettre une re-connection</span>
+                                avec des émotions, des sensations et souvent des souvenirs.
+                            </p>
+                            <br>
+                            <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                                Le résident va donc éprouver des sensations de bien-être et de relaxation,
+                                et/ou choisir de découvrir de nouveaux horizons et de “s’évader“ le temps d’une expérience !
+                            </p>
+                            <br>
+                            <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                                <span class="font-weight-bolder">Les résidents des cellules Alzheimer</span>
+                                vont pouvoir également en profiter, le dispositif étant facilement transportable d’un secteur à un autre de votre établissement.
+                            </p>
+                            <br>
+                            <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                                Les multiples sensations éprouvées permettent de
+                                <span class="font-weight-bolder">faire ressurgir certains souvenirs et d’engager un échange</span>
+                                avec l’animateur et les autres résidents, pendant et après la séance
+                            </p>
+                            <br>
+                            <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                                Des séquences sont parfois tournées spécifiquement en fonction des demandes des résidents,
+                                afin qu’ils se sentent parfaitement à l’aise et familiarisés avec le contexte de l’expérience.
+                            </p>
+                            <br>
+                            <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                                Des projets inter-générationnels sont même en cours pour engager des échanges entre collégiens et
+                                résidents d’EHPAD, et ainsi prolonger dans la durée les bienfaits apportés.
+                            </p>
+                        </div>
+                        <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+                    </div>
+                </div>
+            </div>
+            <!--container boxed du contenu stop-->
+            <!--témoignages start-->
+            <div class="temoignages-pc row mx-auto">
+                <!--temoignage 1 version pc start---------------------------------------------------------------------------------------------------------------------------------- -->
+                <!--temoignage 1 start-->
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            Quel plaisir de pouvoir changer le quotidien de nos pensionnaires !... ils en redemandent, et nous aussi, car cela apporte une véritable valeur ajoutée à notre quotidien. <br><br>
+                            La cellule Alzheimer l’utilise également. <br><br>
+                            <strong>VirtySens</strong> est un support pour améliorer le dialogue, grâce au travail que l’on peut réaliser sur les souvenirs oubliés.
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="badge text-white font-badge">
+                            Valérie C. <br>
+                            Responsable animation dans un EHPAD <br>
+                            à Soissons
+                        </p>
+                    </div>
+                </div>
+                <!--temoignage 1 stop-->
+                <!--temoignage 2 start-->
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            C’est magique votre solution VirtySens... elle procure bien plus que prévu. <br><br>
+                            Les résidents ont retrouvé de la joie de vivre, se sont remis à parler et à chanter. <br><br>
+                            Le personnel soignant l’utilise également tous les jours pour se relaxer.
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="text-white font-badge">
+                            Catherine C. <br>
+                            Directrice d’un EHPAD <br>
+                            dans la Marne
+                        </p>
+                    </div>
+                </div>
+                <!--temoignage 2 stop-->
+                <!--temoignage 3 start-->
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            Pour certains, Virtysens représente une réelle bouffée d’oxygène dans une routine quotidienne parfois monotone. <br><br>
+                            Pour d’autres, il s’agit d’un moment propice à l'apaisement et à la détente, qui tend à diminuer l’anxiété et les idées noires. <br><br>
+                            Par ailleurs, Virtysens facilite également la mise en lien et en mots, par le partage des expériences et des ressentis.
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="text-white font-badge">
+                            La Direction <br>
+                            Etablissement pour autistes <br>
+                            en Belgique
+                        </p>
+                    </div>
+                </div>
+                <!--temoignage 3 stop-->
+            </div>
+            <!--témoignages version pc end-->
+            <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!--caroussel version mobile des témoignages start-->
+            <div class="temoignages-mobile-caroussel row mx-auto my-1 col-10">
+                <!-- -------------------------------------------------------------------------------------------------------------------- -->
+                <div id="carouselExampleIndicators3" class="carousel slide border border-dark py-1 px-2 mt-3 bg-light rounded" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active bg-dark"></li>
+                        <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" class="bg-dark"></li>
+                        <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" class="bg-dark"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!--script pour l'interval du caroussel-->
+                        <script>
+                            $('.carousel').carousel({
+                                interval: 3000
+                            })
+                        </script>
+                        <div class="carousel-item active my-2">
+                            <img src="{{ asset('assets/img/testimonials/ehpad1.jpg') }}" loading="lazy" class="slide-img d-block w-100"
+                                 alt="témoignage d'un ehpad de soissons"
+                                 title="témoignage d'un ehpad de soissons">
+                            <br>
+                        </div>
+                        <!--temoignage 1 stop-->
+                        <!--temoignage 2 start-->
+                        <div class="carousel-item my-2">
+                            <img src="{{ asset('assets/img/testimonials/ehpad2.jpg') }}" loading="lazy" class="slide-img d-block w-100"
+                                 alt="témoignage d'un ehpad de la marne"
+                                 title="témoignage d'un ehpad de la marne">
+                            <br>
+                        </div>
+                        <!--temoignage 2 stop-->
+                        <!--temoignage 3 start-->
+                        <div class="carousel-item my-2">
+                            <img src="{{ asset('assets/img/testimonials/ehpad3.jpg') }}" loading="lazy" class="slide-img d-block w-100"
+                                 alt="témoignage d'un ehpad de belgique"
+                                 title="témoignage d'un ehpad de belgique">
+                            <br>
+                        </div>
+
+                        <!--temoignage 3 stop-->
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+            </div>
+            <!--caroussel version mobile des témoignages start-->
+            <!--cta start-->
+            <div class="mx-auto text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-11 mt-3 mb-5">
+                <div class="btn-cta mx-auto my-1 text-center">
+                    <a href="{{ path('contact') }}" target="_blank" rel="noopener noreferrer nofollow" class="btn-cta btn btn-info btn-md mx-auto text-center text-white col-12 col-sm-11 col-md-11 col-lg-8 col-xl-7 mt-3 text-uppercase">
+                        Découvrir la <strong>solution virtysens</strong>  pour <strong>ehpad</strong>
+                    </a>
+                </div>
+            </div>
+            <!--cta stop-->
+            </div>
+            <!--solution 1 ehpad stop-->
+            <hr>
+            <!-- ---------------------------------------------------IME--------------------------------------------------------------------- -->
+            <div class="container-fluid">
+                <!--solution 2 ime start-->
+                <div class="row mx-auto mt-5 mb-3 d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto">
+                        <!--image solution en ime start-->
+                        <figure class="accueil-section-1-item col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
+                            <img src="{{ asset('assets/img/ime.jpg') }}" loading="lazy" alt="photo montrant la stimulation de 4 sens procure du bien-être dans les établissements spécialisés"
+                                 title="La stimulation de 4 sens procure du bien-être dans les établissements spécialisés"
+                                 class="img-fluid border border-dark rounded">
+                            <figcaption class="hidden">La stimulation de 4 sens procure du bien-être dans les établissements spécialisés</figcaption>
+                        </figure>
+                        <!--image solution en ime  end-->
+                    </div>
+
+                    <div class="produits-item-texte row col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto my-0 text-left">
+                        <h4 class="mx-auto my-auto text-left col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            La solution pour les <strong>IME</strong>
+                        </h4>
+                        <br>
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                            <span class="font-weight-bolder">La diversité des expériences</span>
+                            multi-sensorielles permet de proposer des contenus adaptés aux enfants et aux adolescents.
+                            <br>
+                            <br>
+                            Le choix pourra s’opérer sur des expériences
+                            <span class="font-weight-bolder">offrant davantage de sensations</span>
+                            ou au contraire sur
+                            <span class="font-weight-bolder">d’autres plus calmes</span>
+                            et spécifiquement développé pour les publics plus jeunes.
+                        </p>
+                        <br>
+                        <br>
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                            L’ergonomie de la capsule a été pensée pour
+                            <span class="font-weight-bolder">s’adapter</span> également à des
+                            <span class="font-weight-bolder">formats spécifiques de lits d’IME</span>,
+                            ou à tous types de fauteuils roulants.
+                        </p>
+                        <br>
+                        <br>
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                            Les effets relaxants et apaisants se feront également ressentir sur des
+                            <span class="font-weight-bolder">enfants souffrant de troubles autistiques</span>,
+                            les expériences ayant été conçues pour canaliser l’attention et calmer les utilisateurs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!--container boxed du contenu stop-->
+            <!--témoignages start-->
+            <div class="temoignages-pc row mx-auto">
+                <!--temoignage 1 version pc start---------------------------------------------------------------------------------------------------------------------------------- -->
+                <!--temoignage 1 start-->
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            Le personnel de l’<strong>IME</strong> est ravi de pouvoir utiliser facilement et quotidiennement l’<strong>appareil VirtySens</strong>. <br><br>
+                            Les premiers retours des enfants ont été : “Fantastique !”, “Incroyable”, “J’ai fait un <em>magnifique voyage</em>.
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="badge text-white font-badge">
+                            Christophe D. <br>
+                            Directeur Pôle Enfance d’un IME <br>
+                            du Pas-de-Calais
+                        </p>
+                    </div>
+                </div>
+                <!--temoignage 1 stop-->
+
+                <!--temoignage 2 start-->
+                {#
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            Plus de 90% de nos pensionnaires utilisent <strong>VirtySens</strong> quotidiennement. <br><br>
+                            C’est leur <em>bouffée d’oxygène</em>. <br><br>
+                            Pendant la période du confinement, l’appareil a pu être installé dans les chambres, <br>
+                            et c’était la seule activité possible pour <em>adoucir</em> leur quotidien. <br><br>
+                            Un grand merci !
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="text-white font-badge">
+                            Alain L. <br>
+                            Directeur d’un institut spécialisé <br>
+                            (handicap adulte) en Belgique
+                        </p>
+                    </div>
+                </div>
+                #}
+                <!--temoignage 2 stop-->
+
+                <!--temoignage 3 start-->
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            L'utilisation de votre appareil apporte à nos pensionnaires un <em>bien-être profond</em>. <br><br>
+                            Nous avons pu constater que les personnes sous contention peuvent être “<em>libérées</em>” <br>
+                            lors de la séance : ils se <em>détendent</em> et prennent <em>plaisir</em> à <strong>découvrir</strong> et à <strong>observer</strong>.
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="text-white font-badge">
+                            Jean D. <br>
+                            Directeur d’un institut spécialisé <br>
+                            (autistes) en Belgique
+                        </p>
+                    </div>
+                </div>
+                <!--temoignage 3 stop-->
+            </div>
+            <!--témoignages version pc end-->
+            <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!--caroussel version mobile des témoignages start-->
+            <div class="temoignages-mobile-caroussel row mx-auto my-1 col-10">
+                <!-- -------------------------------------------------------------------------------------------------------------------- -->
+                <div id="carouselExampleIndicators4" class="carousel slide border border-dark py-1 px-2 mt-3 bg-light rounded" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active bg-dark"></li>
+                        {#
+                        <li data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1" class="bg-dark"></li>
+                        #}
+                        <li data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2" class="bg-dark"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!--script pour l'interval du caroussel-->
+                        <script>
+                            $('.carousel').carousel({
+                                interval: 3000
+                            })
+                        </script>
+                        <div class="carousel-item active my-2">
+                            <img src="{{ asset('assets/img/testimonials/ime1.jpg') }}" loading="lazy" class="slide-img d-block w-100"
+                                 alt="témoignage d'une img du pas de calais"
+                                 title="témoignage d'une img du pas de calais">
+                            <br>
+                        </div>
+                        <!--temoignage 1 stop-->
+
+                        <!--temoignage 2 start-->
+                        {#
+                        <div class="carousel-item my-2">
+                            <img src="{{ asset('assets/img/testimonials/ime2.jpg') }}" loading="lazy" class="slide-img d-block w-100"
+                                 alt="témoignage d'une img de belgique"
+                                 title="témoignage d'une img de belgique">
+                            <br>
+                        </div>
+                        #}
+                        <!--temoignage 2 stop-->
+
+                        <!--temoignage 3 start-->
+                        <div class="carousel-item my-2">
+                            <img src="{{ asset('assets/img/testimonials/ime3.jpg') }}" loading="lazy" class="slide-img d-block w-100"
+                                 alt="témoignage d'un institut spécialisé de belgique"
+                                 title="témoignage d'un institut spécialisé de belgique">
+                            <br>
+                        </div>
+
+                        <!--temoignage 3 stop-->
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+            </div>
+            <!--caroussel version mobile des témoignages start-->
+            <!--cta start-->
+            <div class="mx-auto text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-11 mt-3 mb-5">
+                <div class="btn-cta mx-auto my-1 text-center">
+                    <a href="{{ path('contact') }}" target="_blank" rel="noopener noreferrer nofollow" class="btn-cta btn btn-info btn-md mx-auto text-center text-white col-12 col-sm-11 col-md-11 col-lg-8 col-xl-7 mt-3 text-uppercase">
+                        Découvrir la <strong>solution virtysens  pour <strong>IME</strong>
+                    </a>
+                </div>
+            </div>
+            <!--cta stop-->
+            </div>
+            <!--solution 2 ime stop-->
+
+            <hr>
+
+            <!-- ----------------------------------------------------MAS--------------------------------------------------------------------- -->
+            <div class="container-fluid">
+                <!--solution 3 mas start-->
+                <div class="row mx-auto my-5 d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto">
+                        <!--image solution en mas start-->
+                        <figure class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
+                            <img src="{{ asset('assets/img/mas.jpg') }}" alt="photo montrant notre capsule multi-sensorielle qui ravit les résidents et l’équipe animation d’une MAS"
+                                 title="Notre capsule multi-sensorielle qui ravit les résidents et l’équipe éducatrice d’une MAS"
+                                 class="img-fluid border border-dark rounded">
+                            <figcaption class="hidden">Notre capsule multi-sensorielle qui ravit les résidents et l’équipe éducatrice d’une MAS</figcaption>
+                        </figure>
+                        <!--image solution en mas  end-->
+                    </div>
+
+                    <div class="produits-item-texte row col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto my-0 text-left">
+                        <h4 class="mx-auto text-left col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            La solution pour les <strong>MAS</strong>
+                        </h4>
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                            Dès sa conception, le dispositif VirtySens a été étudié pour
+                            <span class="font-weight-bolder">s’adapter à tous types handicaps</span>,
+                            qu’ils soient d’ordre cognitifs ou moteurs.
+                            <br><br>
+                            Les expériences sont facilement accessibles aussi bien en fauteuil roulant, en coque, que dans un lit.
+
+                            <span class="font-weight-bolder">Quelle que soit la position de la tête du patient</span>,
+                            le dispositif VirtySens s’adapte et
+                            permet à tous de profiter des paysages, des sons et des sensations.
+                            <br><br>
+                            A titre d’exemple, le recentrage des images diffusées, se fait automatiquement en fonction de
+                            la position de la tête de l’utilisateur, afin de garantir une expérience optimale.
+                        </p>
+                        <br>
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                            <span class="font-weight-bolder">La mise en route du dispositif étant des plus simples</span>
+                            et la sélection des expériences étant intuitive, il n’y a ainsi quasiment pas
+                            de limites pour ressentir relaxation, bien-être et découverte.
+                        </p>
+                        <br>
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                            L’utilisation est si simple que le personnel soignant n’hésite pas à utiliser le dispositif pour se relaxer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!--container boxed du contenu stop-->
+            <!--témoignages start-->
+            <div class="temoignages-pc row mx-auto">
+                <!--temoignage 1 version pc start---------------------------------------------------------------------------------------------------------------------------------- -->
+                <!--temoignage 1 start-->
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            Quel plaisir de pouvoir changer le quotidien de nos pensionnaires !... ils en redemandent, et nous aussi, car cela apporte une véritable valeur ajoutée à notre quotidien. <br><br>
+                            La cellule Alzheimer l’utilise également. <br><br>
+                            <strong>VirtySens</strong> est un support pour améliorer le dialogue, grâce au travail que l’on peut réaliser sur les souvenirs oubliés.
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="badge text-white font-badge">
+                            Valérie C. <br>
+                            Responsable animation dans un EHPAD <br>
+                            à Soissons
+                        </p>
+                    </div>
+                </div>
+                <!--temoignage 1 stop-->
+                <!--temoignage 2 start-->
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            Pour nos résidents, cela permet de voyager et de découvrir sans bouger de leurs fauteuils.
+                            <br><br>
+                            VirtySens crée du rêve pour nos résidents. C'est extraordinaire !
+                            <br><br>
+                            Toute l'équipe de l'établissement a hâte de découvrir les évolutions de cet incroyable dispositif !”
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="text-white font-badge">
+                            Pascale B. <br>
+                            Directrice <br>
+                            MAS du Nord
+                        </p>
+                    </div>
+                </div>
+                <!--temoignage 2 stop-->
+                <!--temoignage 3 start-->
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            Pour certains, Virtysens représente une réelle bouffée d’oxygène dans une routine quotidienne parfois monotone. <br><br>
+                            Pour d’autres, il s’agit d’un moment propice à l'apaisement et à la détente, qui tend à diminuer l’anxiété et les idées noires. <br><br>
+                            Par ailleurs, Virtysens facilite également la mise en lien et en mots, par le partage des expériences et des ressentis.
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="text-white font-badge">
+                            La Direction <br>
+                            Etablissement pour autistes <br>
+                            en Belgique
+                        </p>
+                    </div>
+                </div>
+                <!--temoignage 3 stop-->
+            </div>
+            <!--témoignages version pc end-->
+            <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!--caroussel version mobile des témoignages start-->
+            <div class="temoignages-mobile-caroussel row mx-auto my-1 col-10">
+                <!-- -------------------------------------------------------------------------------------------------------------------- -->
+                <div id="carouselExampleIndicators5" class="carousel slide border border-dark py-1 px-2 mt-3 bg-light rounded" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0" class="active bg-dark"></li>
+                        <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1" class="bg-dark"></li>
+                        <li data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2" class="bg-dark"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!--script pour l'interval du caroussel-->
+                        <script>
+                            $('.carousel').carousel({
+                                interval: 3000
+                            })
+                        </script>
+                        <div class="carousel-item active my-2">
+                            <img src="{{ asset('assets/img/testimonials/mas1.jpg') }}" loading="lazy" class="slide-img d-block w-100"
+                                 alt="témoignage d'une mas de france"
+                                 title="témoignage d'une mas de france">
+                            <br>
+                        </div>
+                        <!--temoignage 1 stop-->
+                        <!--temoignage 2 start-->
+                        <div class="carousel-item my-2">
+                            <img src="{{ asset('assets/img/testimonials/mas2.jpg') }}" loading="lazy" class="slide-img d-block w-100"
+                                 alt="témoignage d'une mas du nord"
+                                 title="témoignage d'une mas du nord">
+                            <br>
+                        </div>
+                        <!--temoignage 2 stop-->
+                        <!--temoignage 3 start-->
+                        <div class="carousel-item my-2">
+                            <img src="{{ asset('assets/img/testimonials/mas3.jpg') }}" loading="lazy" class="slide-img d-block w-100"
+                                 alt="témoignage d'une mas de belgique"
+                                 title="témoignage d'une mas de belgique">
+                            <br>
+                        </div>
+
+                        <!--temoignage 3 stop-->
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+            </div>
+            <!--caroussel version mobile des témoignages start-->
+            <!--cta start-->
+            <div class="mx-auto text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-11 mt-3 mb-5">
+                <div class="btn-cta mx-auto my-1 text-center">
+                    <a href="{{ path('contact') }}" target="_blank" rel="noopener noreferrer nofollow" class="btn-cta btn btn-info btn-md mx-auto text-center text-white col-12 col-sm-11 col-md-11 col-lg-8 col-xl-7 mt-3 text-uppercase">
+                        Découvrir la <strong>solution virtysens  pour <strong>MAS</strong>
+                    </a>
+                </div>
+            </div>
+            <!--cta stop-->
+            </div>
+            <!--solution 3 mas stop-->
+
+            <hr>
+
+            <!-- ---------------------------------------------------SOPHROLOGUE--------------------------------------------------------------------- -->
+            {# a décommenter pour rendre actif #}
+            {#            <div class="container">
+                <!--solution 4 start-->
+                <div class="row mx-auto mt-5 mb-3 d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-sm-7 col-md-6 col-lg-6 col-xl-6 mx-auto">
+                        <!--image solution en ehpad start-->
+                        <figure class="accueil-section-1-item col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 mx-auto">
+                            <img src="{{ asset('assets/img/118577795_2684338171885564_3383877923757284756_n.jpg')}}" loading="lazy" alt="L'appareil Virtysens permet de redécouvrir vos sens et des senteurs oubliées, visualisé une expérience en 3d à 360 degrés avec des diffuseur d'odeurs" title="L'appareil Virtysens permet de redécouvrir vos sens et des senteurs oubliées, visualisé une expérience en 3d à 360 degrés avec des diffuseur d'odeurs" class="img-fluid col-12">
+                            <figcaption class="hidden">L'appareil Virtysens permet de redécouvrir vos sens et des senteurs oubliées, visualisé une expérience en 3d à 360 degrés avec des diffuseur d'odeurs</figcaption>
+                        </figure>
+                        <!--image solution en ehpad  end-->
+                    </div>
+
+                    <div class="row col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mx-auto my-auto text-left produits-item-texte">
+                        <h4 class="mx-auto my-auto text-left col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            La solution pour les <strong>SOPHROLOGUE</strong>
+                        </h4>
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-5 mx-auto text-left">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales arcu quis quam semper cursus a accumsan purus.
+                            Vestibulum hendrerit sed turpis sit amet mollis.
+                            Morbi ante erat, sagittis vitae lectus vitae, convallis convallis quam. Donec vehicula posuere lacus at lacinia.
+                            Pellentesque aliquet sed felis sed laoreet.
+                        </p>
+
+                        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-auto mx-auto text-left">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales arcu quis quam semper cursus a accumsan purus.
+                            Vestibulum hendrerit sed turpis sit amet mollis.
+                            Morbi ante erat, sagittis vitae lectus vitae, convallis convallis quam. Donec vehicula posuere lacus at lacinia.
+                            Pellentesque aliquet sed felis sed laoreet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!--container boxed du contenu stop-->
+            <!--témoignages start-->
+            <div class="temoignages-pc row mx-auto">
+                <!--temoignage 1 version pc start---------------------------------------------------------------------------------------------------------------------------------- -->
+                <!--temoignage 1 start-->
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            Quel plaisir de pouvoir changer le quotidien de nos pensionnaires !... ils en redemandent, et nous aussi, car cela apporte une véritable valeur ajoutée à notre quotidien. <br><br>
+                            La cellule Alzheimer l’utilise également. <br><br>
+                            <strong>VirtySens</strong> est un support pour améliorer le dialogue, grâce au travail que l’on peut réaliser sur les souvenirs oubliés.
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="badge text-white font-badge">
+                            Valérie C. <br>
+                            Responsable animation dans un EHPAD <br>
+                            à Soissons
+                        </p>
+                    </div>
+                </div>
+                <!--temoignage 1 stop-->
+                <!--temoignage 2 start-->
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            C’est magique votre solution VirtySens... elle procure bien plus que prévu. <br><br>
+                            Les résidents ont retrouvé de la joie de vivre, se sont remis à parler et à chanter. <br><br>
+                            Le personnel soignant l’utilise également tous les jours pour se relaxer.
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="text-white font-badge">
+                            Catherine C. <br>
+                            Directrice d’un EHPAD <br>
+                            dans la Marne
+                        </p>
+                    </div>
+                </div>
+                <!--temoignage 2 stop-->
+                <!--temoignage 3 start-->
+                <div class="card text-center produits-section-3-item mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                    <div class="card-header bg-white">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            Pour certains, Virtysens représente une réelle bouffée d’oxygène dans une routine quotidienne parfois monotone. <br><br>
+                            Pour d’autres, il s’agit d’un moment propice à l'apaisement et à la détente, qui tend à diminuer l’anxiété et les idées noires. <br><br>
+                            Par ailleurs, Virtysens facilite également la mise en lien et en mots, par le partage des expériences et des ressentis.
+                        </p>
+                    </div>
+                    <div class="card-footer card-temoignage-footer">
+                        <p class="text-white font-badge">
+                            La Direction <br>
+                            Etablissement pour autistes <br>
+                            en Belgique
+                        </p>
+                    </div>
+                </div>
+                <!--temoignage 3 stop-->
+            </div>
+            <!--témoignages version pc end-->
+            <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!--caroussel version mobile des témoignages start-->
+            <div class="temoignages-mobile-caroussel row mx-auto my-1 col-10">
+                <!-- -------------------------------------------------------------------------------------------------------------------- -->
+                <div id="carouselExampleIndicators6" class="carousel slide border border-dark py-1 px-2 mt-3 bg-light rounded" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="0" class="active bg-dark"></li>
+                        <li data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="1" class="bg-dark"></li>
+                        <li data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="2" class="bg-dark"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!--script pour l'interval du caroussel-->
+                        <script>
+                            $('.carousel').carousel({
+                                interval: 3000
+                            })
+                        </script>
+                        <div class="carousel-item active my-2">
+                            <img src="assets/img/testimonials/testimonial-ehpad-1.png" loading="lazy" class="slide-img d-block w-100" alt="logo bpi france" title="bpi france soutient virtysens">
+                            <br>
+                        </div>
+                        <!--temoignage 1 stop-->
+                        <!--temoignage 2 start-->
+                        <div class="carousel-item my-2">
+                            <img src="{{ asset('assets/img/testimonials/testimonial-ehpad-2.png') }}" loading="lazy" class="slide-img d-block w-100" alt="logo bpi france" title="bpi france soutient virtysens">
+                            <br>
+                        </div>
+                        <!--temoignage 2 stop-->
+                        <!--temoignage 3 start-->
+                        <div class="carousel-item my-2">
+                            <img src="{{ asset('assets/img/testimonials/testimonial-ehpad-3.png') }}" loading="lazy" class="slide-img d-block w-100" alt="logo bpi france" title="bpi france soutient virtysens">
+                            <br>
+                        </div>
+
+                        <!--temoignage 3 stop-->
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators36" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators36" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+            </div>
+            <!--caroussel version mobile des témoignages start-->
+            <!--cta start-->
+            <div class="mx-auto text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-11 mt-3 mb-5">
+                <div class="btn-cta mx-auto my-1 text-center">
+                    <a href="{{ path('contact') }}" target="_blank" rel="noopener noreferrer nofollow" class="btn-cta btn btn-info btn-md mx-auto text-center text-white col-12 col-sm-11 col-md-11 col-lg-8 col-xl-7 mt-3 text-uppercase">
+                        Découvrir la <strong>solution virtysens  pour <strong>SOPHROLOGUE</strong>
+                    </a>
+                </div>
+            </div>
+            <!--cta stop-->
+            </div>
+            <!--solution 4 sophrologue stop-->#}
+        </section>
+        <!--section 3 les solutions virtysens stop-->
+    </main>
+    <!-- main stop-->
+{% endblock %}

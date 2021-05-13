@@ -1,0 +1,537 @@
+{# page d'accueil #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %} VirtySens | Accueil{% endblock %}
+
+{% block body %}
+
+
+    <!--main start-->
+    <main class="accueil mt-5 container-fluid mx-0">
+        <!--1 section avec 3 images start-->
+        <section class="accueil-section-1 container mx-auto text-center">
+            {% for message in app.flashes('message') %}
+                <div class="alert alert-success col-8 mx-auto text-center" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+
+            <h3 class="mx-auto text-center">
+                Bien-être et Relaxation pour personnes fragilisées, grâce à une capsule
+                multi-sensorielle immersive !
+            </h3>
+            <div class="gallery-top container-flud mt-5">
+                <div class="row text-center mx-auto">
+                    <figure class="accueil-section-1-item col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 mx-auto">
+                        <img src="{{ asset('assets/img/home-s1-p1.jpg') }}" loading="lazy"
+                             alt="photo montrant la détente et apaisement au programme d’une séance VirtySens" title="Détente et apaisement au programme d’une séance VirtySens"
+                             class="img-fluid border border-dark rounded" />
+                        <figcaption class="hidden">Détente et apaisement au programme d’une séance VirtySens</figcaption>
+                    </figure>
+                    <figure class="accueil-section-1-item col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4mx-auto">
+                        <img src="{{ asset('assets/img/home-s1-p2.jpg') }}" loading="lazy"
+                             alt="photo d'une séance de relaxation au sein d’une MARPA" title="Séance de relaxation au sein d’une MARPA"
+                             class="img-fluid border border-dark rounded" />
+                        <figcaption class="hidden">Séance de relaxation au sein d’une MARPA</figcaption>
+                    </figure>
+                    <figure class="accueil-section-1-item col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 mx-auto">
+                        <img src="{{ asset('assets/img/home-s1-p3.jpg') }}" loading="lazy"
+                             alt="photo de personnes en fauteuil roulant accèdent facilement au dispositif VirtySens" title="Les personnes en fauteuil roulant accèdent facilement au dispositif VirtySens"
+                             class="img-fluid border border-dark rounded" />
+                        <figcaption class="hidden">Les personnes en fauteuil roulant accèdent facilement au dispositif VirtySens</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="caroussel-top container-fluid mt-5">
+                <!-- -------------------------------------------------------------------------------------------------------------------- -->
+                <div id="carouselExampleIndicators"
+                     class="carousel slide border border-dark py-1 px-2 mt-3 bg-light rounded" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark">
+                        </li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-dark"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-dark"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!--script pour l'interval du caroussel-->
+                        <script>
+                            $(".carousel").carousel({
+                                interval: 2000,
+                            });
+                        </script>
+                        <div class="carousel-item active">
+                            <img src="{{ asset('assets/img/home-s1-p1.jpg') }}" loading="lazy"
+                                 alt="photo montrant la détente et apaisement au programme d’une séance VirtySens" title="Détente et apaisement au programme d’une séance VirtySens"
+                                 class="slide-img d-block w-100" />
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="{{ asset('assets/img/home-s1-p2.jpg') }}" loading="lazy"
+                                 alt="photo d'une séance de relaxation au sein d’une MARPA" title="Séance de relaxation au sein d’une MARPA"
+                                 class="slide-img d-block w-100" />
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="{{ asset('assets/img/home-s1-p3.jpg') }}" loading="lazy"
+                                 alt="photo de personnes en fauteuil roulant accèdent facilement au dispositif VirtySens" title="Les personnes en fauteuil roulant accèdent facilement au dispositif VirtySens"
+                                 class="d-block w-100" />
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+            </div>
+        </section>
+        <!--1 section avec 3 images stop-->
+        <!--ligne de separation doree start-->
+        <div class="ligne-or"></div>
+        <!--ligne de separation doree stop-->
+        <!--2 section avec player start-->
+        <section class="accueil-section-2 container mx-auto text-center">
+            <div class="row">
+                <h3 class="mx-auto text-center col-8 col-sm-9 col-md-8 col-lg-10 col-xl-10">
+                    Une innovation "<strong>Made in Hauts de France</strong>" <br>qui redonne le sourire !
+                </h3>
+                <div class="mx-auto col-4 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+                    <figure>
+                        <img src="{{ asset('assets/img/frenchtech.png') }}" loading="lazy"
+                             alt="logo frenchtech" class="img-fluid"/>
+                        <figcaption class="hidden">logo frenchtech</figcaption>
+                    </figure>
+                </div>
+
+                <div class="embed-responsive embed-responsive-16by9 my-3 mx-auto text-center col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8">
+                    <iframe class="embed-responsive-item mx-auto border border-dark rounded"
+                            src="https://www.youtube.com/embed/FLQo8gYZ3cU?rel=0&autoplay=1&mute=1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen >
+
+                    </iframe>
+                </div>
+            </div>
+
+            <!--cta start-->
+            <div class="mx-auto text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="btn-cta mx-auto my-1 text-center">
+                    <a href="{{ path('contact') }}" target="_blank" rel="noopener noreferrer nofollow"
+                       class="btn-cta btn btn-info btn-md mx-auto text-center text-white col-12 col-sm-11 col-md-10 col-lg-6 col-xl-6 text-uppercase">Découvrir
+                        le dispositif virtysens</a>
+                </div>
+            </div>
+            <!--cta stop-->
+        </section>
+        <!--2 section avec player stop-->
+        <!--ligne de separation doree start-->
+        <div class="ligne-or"></div>
+        <!--ligne de separation doree stop-->
+        <!--3 section avec atouts start-->
+        <section class="accueil-section-3 container text-center mx-auto">
+            <div class="row">
+                <h3 class="mx-auto my-3">
+                    Ce qui facilite la mise en place de <strong>VirtySens</strong> :
+                </h3>
+                <div class="container mt-3 mx-auto text-center">
+                    <div class="row">
+                        <!--item 1 start-->
+                        <div
+                                class="accueil-section-3-item mx-auto my-1 col-10 col-sm-10 col-md-4 col-lg-3 col-xl-3 text-center">
+                            <div>
+                                <figure>
+                                    <img src="{{ asset('assets/img/item-1.png') }}" loading="lazy"
+                                         alt="image facilité d'utilisation de virtysens"
+                                         title="facilité d'utilisation de virtysens" class="img-fluid col-8" />
+                                    <figcaption class="hidden">
+                                        facilité d'utilisation de virtysens
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="my-4">
+                                <h4><strong>Facile à utiliser</strong></h4>
+                            </div>
+                            <div>
+                                <p class="font-weight-bolder text-left">
+                                    Une solution Plug&Play : <br /><br />
+                                    - une prise à brancher... et c’est tout ! <br /><br>
+                                    - pas de connexion réseau requise<br /><br>
+                                    - pas de protocole compliqué
+                                </p>
+                            </div>
+                        </div>
+                        <!--item 1 stop-->
+                        <!--item 2 start-->
+                        <div
+                                class="accueil-section-3-item mx-auto my-1 col-10 col-sm-10 col-md-4 col-lg-3 col-xl-3 text-center">
+                            <div>
+                                <figure>
+                                    <img src="{{ asset('assets/img/item-2.png') }}" loading="lazy" alt="image mobilité de virtysens"
+                                         title="mobilité de virtysens" class="img-fluid col-8" />
+                                    <figcaption class="hidden">
+                                        mobilité de virtysens
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="my-4">
+                                <h4><strong>Mobile & adaptable</strong></h4>
+                            </div>
+                            <div>
+                                <p class="font-weight-bolder text-left">
+                                    Notre dispositif s’adapte à vos besoins  et contraintes : <br /><br />
+                                    - compatible avec vos ascenseurs <br /><br>
+                                    - accès aisé en chambre individuelle <br /><br>
+                                    - peut s’utiliser en position assise ou allongée
+                                </p>
+                            </div>
+                        </div>
+                        <!--item 2 stop-->
+                        <!--item 3 start-->
+                        <div
+                                class="accueil-section-3-item mx-auto my-1 col-10 col-sm-10 col-md-4 col-lg-3 col-xl-3 text-center">
+                            <div>
+                                <figure>
+                                    <img src="{{ asset('assets/img/item-3.png') }}" loading="lazy" alt="photo de Virtysens en ime"
+                                         title="Démonstration de Virtysens en ime" class="img-fluid col-8" />
+                                    <figcaption class="hidden">Virtysens en ime</figcaption>
+                                </figure>
+                            </div>
+                            <div class="my-4">
+                                <h4><strong>Immersif</strong></h4>
+                            </div>
+                            <div>
+                                <p class="font-weight-bolder text-left">
+                                    4 sens stimulés en simultané pour une immersion total immersion : <br /><br>
+                                    - la vue et l’ouïe, grâce au casque de
+                                    réalité virtuelle <br /><br>
+                                    -le toucher et l’odorat, grâce aux
+                                    boîtiers multi-sensoriels.
+                                </p>
+                            </div>
+                        </div>
+                        <!--item 3 stop-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--3 section avec atouts stop-->
+        <!--ligne de separation doree start-->
+        <div class="ligne-or"></div>
+        <!--ligne de separation doree stop-->
+        <!--4 section avec deux colonnes start-->
+        <section class="accueil-section-3 container my-1 mx-auto text-center">
+            <div class="row mx-auto text-center">
+                <!--item 1 start-->
+                <div class="accueil-section-4-item mx-auto row col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                    <div class="accueil-section-4-item-texte mx-auto col-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
+                        <h3 class="mx-auto mb-2 text-left">L’<em>immersion</em> par les sens</h3>
+                        <p class="text-left">
+                            Le dispositif <strong>VirtySens</strong> allie 4 <em>sens</em>,
+                            pour immerger le patient au coeur de l’expérience, et lui
+                            <span class="font-weight-bolder">faire ressentir des sensations intenses</span>
+                            et souvent oubliées.
+                        </p>
+                        <p class="text-left">
+                            - des films en haute définition et au format adapté (180 ou 360 degrés), combinés à un son binaural,
+                            <span class="font-weight-bolder">mobilisent et captivent la Vue et l’Ouïe.</span><br /><br />
+                        </p>
+                        <p class="text-left">
+                            - la diffusion de micro-gouttelettes d’huiles essentielles accroît l’immersion sensorielle en
+                            <span class="font-weight-bolder">activant l’Odorat.</span>
+                        </p>
+                        <p class="text-left">
+                            - les souffles chauds et froids qui agrémentent les différentes scènes proposées renforcent l’effet immersif en
+                            <span class="font-weight-bolder">stimulant le Toucher</span>.
+                        </p>
+                        <p class="text-left">
+                            Tout concourt ainsi à faire ressentir à l'utilisateur du dispositif des sensations telles que l'évasion, le bien-être et la relaxation sont au rendez-vous!
+                        </p>
+                        <p class="text-left">
+                            Le cerveau se retrouve comme bluffé par tant de ressentis, ce qui impacte à la fois le corps et l'esprit...
+                            <br>
+                            et ce pour une durée qui dépasse souvent de beaucoup le temps de l'expérience VirtySens.
+                        </p>
+                    </div>
+
+                    <div class="accueil-section-4-item-2 mx-auto col-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
+                        <figure>
+                            <img src="{{ asset('assets/img/home-s4-p1.jpg') }}" loading="lazy"
+                                 alt="photo montrant la stimulation de 4 sens apporte relaxation et détente dans un cabinet de sophrologie"
+                                 title="La stimulation de 4 sens apporte relaxation et détente dans un cabinet de sophrologie"
+                                 class="home-section-4-img-pc img-fluid border border-dark rounded"/>
+                            <figcaption class="hidden">La stimulation de 4 sens apporte relaxation et détente dans un cabinet de sophrologie</figcaption>
+                        </figure>
+                    </div>
+                    
+                </div>
+                <!--item 1 stop-->
+
+                <!--div des deux photos sur mobile start-->
+                <div class="container-fluid mx-auto text-center home-section-4-div-hidden mt-3">
+                    <div class="row mx-auto text-center">
+                        <div class="col-6">
+                            <img src="{{ asset('assets/img/home-s4-p1.jpg') }}" loading="lazy"
+                                 alt="photo montrant la stimulation de 4 sens apporte relaxation et détente dans un cabinet de sophrologie"
+                                 class="img-fluid mx-auto  border border-dark rounded" />
+                        </div>
+
+                        <div class="col-6">
+                            <img src="{{ asset('assets/img/home-s4-p2.jpg') }}" loading="lazy"
+                                 alt="L'attention d'un patient souffrant de troubles autistiques se trouve canalisée par une expérience VirtySens"
+                                 class="img-fluid mx-auto border border-dark rounded" />
+                        </div>
+                    </div>
+                </div>
+                <!--div des deux photos sur mobile stop-->
+
+                <!--item 2 start-->
+                <div class="accueil-section-4-item mx-auto mt-5 row col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="accueil-section-4-item-2 mx-auto col-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
+                        <figure>
+                            <img src="{{ asset('assets/img/home-s4-p2.jpg') }}" loading="lazy"
+                                 alt="L'attention d'un patient souffrant de troubles autistiques se trouve canalisée par une expérience VirtySens"
+                                 title="L'attention d'un patient souffrant de troubles autistiques se trouve canalisée par une expérience VirtySens"
+                                 class="home-section-4-img-pc img-fluid border border-dark rounded"/>
+                            <figcaption class="hidden">L'attention d'un patient souffrant de troubles autistiques se trouve canalisée par une expérience VirtySens</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="accueil-section-4-item-texte mx-auto col-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
+                        <h3 class="mx-auto mb-2 text-left">Des expériences variées pour répondre à tous les besoins !</h3>
+                        <p class="text-left">
+                            Développée avec une <strong>Sophrologue</strong>-
+                            <strong>Psychologue</strong> et avec une
+                            <strong>Psycho motricienne</strong>, et
+                            <span class="font-weight-bolder">enrichie par les nombreux retours d’expérience</span>
+                            des éducateurs spécialisés, ergothérapeutes, animateurs et soignants, notre palette d’expériences immersives est diversifiée : <br /><br />
+                        </p>
+                        <p class="text-left">
+                            - <strong>Evasion Découvertes</strong>,  grâce à des
+                            <span class="font-weight-bolder">voyages en terres inconnues</span>,
+                            dont les ambiances chaleureuses, glaciales, colorées et/ou dépaysantes fascinent et transportent . <br /><br />
+                        </p>
+                        <p class="text-left">
+                            - <strong>Souvenirs</strong>,
+                            <span class="font-weight-bolder">en plongeant dans des décors et atmosphères connus</span> :
+                            les <em>monuments de Paris</em>, <em>Venise</em>, les
+                            <em>Pyramides</em>… <br /><br />
+                        </p>
+                        <p class="text-left">
+                            - Relaxation, par des expériences spécifiquement conçues pour amener le patient vers un
+                            <span class="font-weight-bolder">état de détente et de bien-être</span>.
+                        </p>
+                    </div>
+                </div>
+                <!--item 2 stop-->
+            </div>
+            <!--cta start-->
+            <div class="mx-auto my-5 text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="btn-cta mx-auto my-1 text-center">
+                    <a href="{{ path('contact') }}" target="_blank" rel="noopener noreferrer nofollow"
+                       class="btn-cta btn btn-info btn-md mx-auto text-center text-white col-12 col-sm-11 col-md-10 col-lg-6 col-xl-6 text-uppercase">
+                        Découvrir le dispositif virtysens
+                    </a>
+                </div>
+            </div>
+            <!--cta stop-->
+        </section>
+        <!--4 section avec deux colonnes stop-->
+        <!--ligne de separation doree start-->
+        <div class="ligne-or"></div>
+        <!--ligne de separation doree stop-->
+        <!--5 section avec témoignages start-->
+        <section class="accueil-section-5 container-fluid">
+            <div class="row text-center mx-auto text-center">
+                <h3 class="mx-auto mt-1 mb-4 col-12">
+                    Témoignages de nos heureux utilisateurs
+                </h3>
+                <!--témoignages start-->
+                <div class="row mx-auto">
+                    <!--temoignage 1 start-->
+                    <div
+                            class="accueil-section-5-item card mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                        <div class="card-header bg-white">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-left">
+                                J’ai commencé par utiliser le dispositif VirtySens uniquement en séance de sophrologie. Au vu des résultats spectaculaires obtenus,
+                                je l’utilise maintenant également pour les séances de psychologie <br /><br />
+                                Grâce à un protocole autour du sensoriel, l'appareil VirtySens
+                                est devenu central dans l'exercice de mon métier. <br /><br />
+                                Certains patients ont réduit fortement leur prise de
+                                psychotropes juste après la première expérience VirtySens.
+                            </p>
+                        </div>
+                        <div class="card-footer card-temoignage-footer">
+                            <p class="badge text-white font-badge">
+                                Aurélie M. <br />
+                                Sophrologue et Psychologue <br />
+                                à Reims
+                            </p>
+                        </div>
+                    </div>
+                    <!--temoignage 1 stop-->
+                    <!--temoignage 2 start-->
+                    <div
+                            class="accueil-section-5-item card mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                        <div class="card-header bg-white">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-left">
+                                C’est magique votre solution VirtySens... elle procure bien
+                                plus que prévu. <br /><br />
+                                Les résidents ont retrouvé de la joie de vivre, se sont remis
+                                à parler et à chanter. <br /><br />
+                                Le personnel soignant l’utilise également tous les jours pour
+                                se relaxer.
+                            </p>
+                        </div>
+                        <div class="card-footer card-temoignage-footer">
+                            <p class="badge text-white font-badge">
+                                Catherine C. <br />
+                                Directrice d’un EHPAD <br />
+                                dans la Marne
+                            </p>
+                        </div>
+                    </div>
+                    <!--temoignage 2 stop-->
+                    <!--temoignage 3 start-->
+                    <div
+                            class="accueil-section-5-item card mx-auto my-1 col-12 col-sm-12 col-md-10 col-lg-4 col-xl-3 text-center border border-dark p-3">
+                        <div class="card-header bg-white">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-left">
+                                Le personnel de l’IME est ravi de pouvoir utiliser facilement
+                                et quotidiennement l’appareil VirtySens. <br /><br />
+                                Les premiers retours des enfants ont été : “Fantastique !”,
+                                “Incroyable”, “J’ai fait un magnifique voyage !"
+                            </p>
+                        </div>
+                        <div class="card-footer card-temoignage-footer">
+                            <p class="badge text-white font-badge">
+                                Christophe D. <br />
+                                Directeur Pôle Enfance d’un IME <br />
+                                dans le Pas-de-Calais
+                            </p>
+                        </div>
+                    </div>
+                    <!--temoignage 3 stop-->
+                </div>
+                <!--témoignages end-->
+                <!--deux videos de témoignage start-->
+                <div class="container mx-auto text-center my-3">
+                    <div class="row mx-auto text-center d-flex justify-content-around">
+                        <div
+                                class="mx-auto my-1 text-center col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/E3KBfQCcde8"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div
+                                class="mx-auto my-1 text-center col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item border border-dark rounded" src="https://www.youtube.com/embed/PJ2WCutLdcc"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <!--deux videos de témoignage stop-->
+            </div>
+        </section>
+        <!--ligne de separation doree start-->
+        <div class="ligne-or"></div>
+        <!--ligne de separation doree stop-->
+        <!--6 section avec sponsor start-->
+        <section class="accueil-section-3 container mb-5">
+            <div class="row text-center mx-auto text-center">
+                <h3 class="mx-auto my-3">
+                    Ils sont à nos côtés et nous soutiennent - <br>
+                    Nous les remercions
+                </h3>
+                <div class="mx-auto text-center col-12 col-sm-12 col-md-11 col-lg-10 col-xl-8">
+                    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+                    <div id="carouselExampleIndicators2"
+                         class="carousel slide border border-dark py-1 px-2 mt-3 bg-light rounded" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                                class="active bg-dark"></li>
+                            <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" class="bg-dark"></li>
+                            <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" class="bg-dark"></li>
+                            <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" class="bg-dark"></li>
+                            <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4" class="bg-dark"></li>
+                            <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5" class="bg-dark"></li>
+                            <li data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="6" class="bg-dark"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <!--script pour l'interval du caroussel-->
+                            <script>
+                                $(".carousel").carousel({
+                                    interval: 2000,
+                                });
+                            </script>
+                            <div class="carousel-item active">
+                                <img src="{{ asset('assets/img/spons1.jpg') }}" loading="lazy" class="slide-img d-block w-100"
+                                     alt="logo bpi france" title="bpi france soutient virtysens" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ asset('assets/img/spons2.jpg') }}" loading="lazy" class="slide-img d-block w-100"
+                                     alt="logo euratechnologies" title="euratechnologies soutient virtysens" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ asset('assets/img/spons3.jpg') }}" loading="lazy" class="d-block w-100"
+                                     alt="logo eurasanté" title="eurasanté soutient virtysens" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ asset('assets/img/spons4.jpg') }}" loading="lazy" class="d-block w-100"
+                                     alt="logo france active" title="france active soutient virtysens" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ asset('assets/img/spons5.jpg') }}" loading="lazy" class="d-block w-100"
+                                     alt="logo techshop" title="techshop soutient virtysens" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ asset('assets/img/spons6.jpg') }}" loading="lazy" class="d-block w-100"
+                                     alt="logo hauts de france innovation developpement"
+                                     title="hauts de france innovation developpement soutient virtysens" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ asset('assets/img/spons7.jpg') }}" loading="lazy" class="d-block w-100"
+                                     alt="logo coeur d'ostrevent" title="coeur d'ostrevent soutient virtysens" />
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+                </div>
+            </div>
+        </section>
+        <!--6 section avec sponsor stop-->
+    </main>
+    <!--main stop-->
+
+
+{% endblock %}

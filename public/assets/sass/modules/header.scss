@@ -1,0 +1,222 @@
+/* scss du header et menu de navigation */
+
+header {
+    background-color: #000;
+    border-bottom: 5px solid#E09813;
+    width: 100% !important;
+    height: auto;
+    margin: auto !important;
+
+    /*menu de navigation*/
+    nav {
+
+        .nav-link {
+            font-family: $font4;
+            letter-spacing: 3px !important;
+            font-size: 1.4em !important;
+        }
+    }
+
+    /*titre du site dans le header*/
+    .header-title {
+        margin: auto;
+
+        h1 {
+            font-family: $font4;
+            margin-top: 5px !important;
+        }
+        h2 {
+            font-family: $font4;
+        }
+
+    }
+
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+// Extra large devices (large desktops, 1200px and up) /*ok*/
+@media (min-width: 1200px) { 
+    header {
+
+        /*menu de navigation*/
+        nav {
+
+            .nav-item {
+                .nav-link {
+                    width: auto;
+                    letter-spacing: 2px;
+                    font-size: 1.4em;
+                }
+            }
+        }
+
+        /*titre du site dans le header*/
+        .header-title {
+
+            h1 {
+                font-size: 1.2em;
+                margin: auto;
+            }
+            h2 {
+                margin: 10px auto;
+                font-size: 1em;
+            }
+        }
+
+    }
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+// Large devices (desktops, 992px and up) /*ok*/
+@media (min-width: 992px) { 
+    header {
+        /*menu de navigation*/
+        nav {
+            .nav-item {
+                .nav-link {
+                    width: auto;
+                    letter-spacing: 1px;
+                    font-size: 1em;
+                }
+            }
+        }
+
+        /*titre du site dans le header*/
+        .header-title {
+
+            h1 {
+                font-size: 1.4em;
+            }
+            h2 {
+                margin: 10px auto;
+                font-size: 0.9em;
+            }
+        }
+
+    }
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+// Medium devices (tablets, 768px and up) /*ok*/
+@media (min-width: 577px) { 
+    header {
+        /*menu de navigation*/
+        .navbar-nav {
+
+            flex-wrap: wrap !important;
+
+            .nav-item {
+                .nav-link {
+                    width: 100%;
+                    font-size: 0.8em;
+                }
+            }
+
+        }
+
+        /*titre du site dans le header*/
+        .header-title {
+
+            h1 {
+                font-size: 1.2em;
+            }
+            h2 {
+                margin: 10px auto;
+                font-size: 0.8em;
+            }
+        }
+
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+// Small devices (paysage phones, 576px and up) /*ok*/
+@media (min-width: 576px) { 
+
+    header {
+        /*menu de navigation*/
+        nav {
+            .nav-item {
+                .nav-link {
+                    letter-spacing: 1px;
+                    font-size: 1.1em;
+                }
+            }
+            .navbar-brand {
+                figure {
+                    img {
+                        width: 72px;
+                    }
+                }
+            }
+
+
+        }
+
+
+        /*titre du site dans le header*/
+        .header-title {
+
+            h1 {
+                font-size: 1em;
+            }
+            h2 {
+                margin: 10px auto;
+                font-size: 0.8em ;
+            }
+        }
+
+    }
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+// Small devices (portrait phones, 300px and up) /*ok*/
+@media (max-width: 575.98px) { 
+    header {
+
+        /*menu de navigation*/
+        nav {
+
+            .nav-item {
+                .nav-link {
+                    width: auto;
+                    
+                    font-size: 1.1em;
+                }
+            }
+            .navbar-brand {
+                margin-left: -35px !important;
+                figure {
+                    img {
+                        width: 64px !important;
+                    }
+                }
+            }
+
+            .nav-menu {
+                margin-top: 50px !important;
+            }
+        }
+
+
+        /*titre du site dans le header*/
+        .header-title {
+            h1 {
+                font-size: 0.6em;
+            }
+            h2 {
+                margin: 10px auto;
+                font-size: 0.6em;
+            }
+        }
+
+    }
+}
+
+/* ------------------------------------------------------------------------------------------- */

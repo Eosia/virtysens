@@ -1,0 +1,118 @@
+/*scss page produits*/
+
+.produits-section-1 {
+    border-bottom: 5px solid#E09813;
+    background-color: black;
+    
+}
+
+.produits-item-texte {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    width: 100% !important;
+    margin: auto !important;
+}
+
+.produits-section-3 {
+        /*couleur de fond des nom des auteurs des témoignages*/
+        .card-temoignage-footer {
+            background-color: #2A93C9 !important;
+        }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .produits {
+        h4 {
+            font-size: 2rem !important;
+            margin-bottom: 5vh !important;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+    /*affiche les témoignages sur les solution en version pc*/
+    .produits-section-3 {
+        .temoignages-pc{
+            display:  visible;
+        }
+
+        .temoignages-mobile-caroussel {
+            display: none !important;
+        }
+    }
+
+}
+
+/*gere le passage de la version pc au mobile pour les temoignages sur les solutions*/
+@media (max-width: 991.98px) { 
+    /*affiche les témoignages sur les solution en version pmobile*/
+    .produits-section-3 {
+        .temoignages-pc{
+            display:  none;
+        }
+        .temoignages-mobile-caroussel {
+            display: visible !important;
+
+            /* height minimum des témoignages du carousselle sur la pages produits*/
+            // .caroussel-temoignages-item {
+            //     min-height: 400px;
+            // }
+        }
+    }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+
+    /*affiche les témoignages sur les solution en version pour mobile*/
+    .produits-section-3 {
+        .temoignages-mobile-caroussel {
+            /* height minimum des témoignages du carousselle sur la pages produits*/
+            .caroussel-temoignages-item {
+                // height: 500px !important;
+                // min-height: 500px !important;
+                // width: 100% !important;
+                // max-width: 100% !important;
+            }
+        }
+    }
+}
+
+// Small devices (portrait phones, 576px and bottom)
+@media (max-width: 575.98px) {
+
+    .produits {
+        h4 {
+            font-size: 1.2rem !important;
+            margin: 20px auto 0;
+        }
+    }
+
+    /*affiche les témoignages sur les solution en version pmobile*/
+    .produits-section-3 {
+        .temoignages-mobile-caroussel {
+            /* height minimum des témoignages du carousselle sur la pages produits*/
+            .caroussel-temoignages-item {
+                // height: 600px !important;
+                // min-height: 600px !important;
+                // width: 100% !important;
+                // max-width: 100% !important;
+            }
+        }
+    }
+}

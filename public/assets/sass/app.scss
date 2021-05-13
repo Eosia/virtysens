@@ -1,0 +1,268 @@
+/* breakpoints bootstrap -taille d'écran- */
+
+/*
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Small devices (portrait phones, 300px and up)
+@media (max-width: 575.98px) {
+
+}
+*/
+
+/* app.scss fichier de surcharge */
+
+/*imports des polices*/
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:wght@600&family=Noto+Sans+JP&family=Orbitron:wght@600&display=swap');
+
+/*utilisation des polices*/
+/*
+font-family: 'Balsamiq Sans', cursive;
+font-family: 'Lora', serif;
+font-family: 'Noto Sans JP', sans-serif;
+*/
+
+/*variables des polices*/
+
+/*lora*/
+$font1: 'Lora', serif;
+/*noto*/
+$font2: 'Noto Sans JP', sans-serif;
+/*balsamiq*/
+$font3: 'Balsamiq Sans', cursive;
+/*font virtysens*/
+$font4: 'Orbitron', sans-serif;
+
+/*variables des couleurs*/
+
+/*titre*/
+$color1:  #1387c4;
+/*texte*/
+$color2: #07364e;
+/*bouton cta*/
+$color3: #2a93c9;
+
+/*reset html, body*/
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    //overflow-x: hidden;
+}
+html, body {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+    max-width: 100% !important;
+    height: 100% !important;
+}
+body {
+    position: relative !important;
+}
+
+main {
+
+    width: 100% !important;
+    height: auto;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*class pour cacher des éléments*/
+.hidden {
+    display: none;
+}
+
+
+/*ligne de séparation dorée*/
+.ligne-or {
+    width: 65%;
+    height: 5px;
+    margin: 5vh auto;
+    text-align: center;
+    background-color: #E09813;
+}
+
+/*annule le style par defaut des balises em et strong*/
+.font-weight-bolder {
+    font-weight: 400 !important;
+}
+
+strong {
+    font-weight: 400 !important;
+}
+
+em {
+    font-style: normal !important;
+}
+
+/*variable tailles polices*/
+
+/*titre 3*/
+h3 {
+    font-family: $font1 !important;
+    color: $color1 !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        font-size: 1.9rem !important;
+    }
+
+    // Extra large devices (large desktops, 1200px and bottom)
+    @media (max-width: 1199px) {
+        font-size: 1.6rem !important;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (max-width: 992px) {
+        font-size: 1.4rem !important;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (max-width: 768px) {
+        font-size: 1.2rem !important;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (max-width: 576px) {
+        font-size: 1rem !important;
+    }
+}
+/*titre 4*/
+h4{
+    font-family: $font1 !important;
+    color: $color1 !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        font-size: 2.2rem !important;
+    }
+
+    // Extra large devices (large desktops, 1200px and bottom)
+    @media (max-width: 1199px) {
+        font-size: 1.8rem !important;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        font-size: 1.4rem !important;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        font-size: 1.2rem !important;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (max-width: 576px) {
+        font-size: 1rem !important;
+    }
+
+    // Small devices (portrait phones, 300px and up)
+    @media (max-width: 575.98px) {
+        font-size: 0.9rem !important;
+    }
+}
+p{
+    font-family: $font2 !important;
+    color: $color2 !important;
+    font-size: 1.4rem !important;
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        font-size: 1.2rem !important;
+    }
+
+    // Extra large devices (large desktops, 1200px and bottom)
+    @media (max-width: 1199px) {
+        font-size: 1.1rem !important;
+    }
+
+    // Large devices (desktops, 992px and up)
+        @media (max-width: 992px) {
+        font-size: 1.2rem !important;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (max-width: 768px) {
+        font-size: 0.9rem !important;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (max-width: 576px) {
+        font-size: 1rem !important;
+    }
+
+}
+
+/*responsive de la taille de la police des cta*/
+.btn-cta {
+    border-radius: 10px !important;
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { 
+        font-size: 1.2em !important;
+    }
+    @media (max-width: 767.99px) { 
+        font-size: 0.9em !important;
+        
+    }
+}
+
+/*pagination*/
+.pagination {
+
+    * {
+        color: $color1;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0 1vh;
+        font-family: $font4;
+        &:hover {
+            color: red;
+            text-decoration: none;
+        }
+        &:after {
+            color: $color1;
+        }
+    }
+}
+
+/*page de login*/
+.login-container {
+    min-height: 60vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+    align-items: flex-start !important;
+    min-height: 70vh !important;
+
+}

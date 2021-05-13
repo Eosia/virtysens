@@ -1,0 +1,44 @@
+<!--teplate email lors d'un nouveau contact sur le site-->
+
+<h1>Message en provenance de votre site Virtysens.com</h1>
+
+<h2>Résumé du nouveau message : </h2>
+
+<hr>
+<h3>Nom :</h3>
+<p  style="color: green; font-size: 30px;">
+    {{ contact.nom }}
+</p>
+<hr>
+<h3>Prénom :</h3>
+<p style="color: green; font-size: 30px;">
+    {{contact.prenom }}
+</p>
+<hr>
+<h3>Fonction :</h3>
+<p style="color: green; font-size: 30px;">
+    {{contact.fonction }}
+</p>
+<hr>
+<h3>Téléphone:</h3>
+<a href="tel:{{ contact.telephone }}" style="text-decoration: none; color: red; font-size: 36px">
+     {{contact.telephone }}
+</a>
+<hr>
+<br>
+<h3>E-mail :</h3>
+<a href="mailto:{{ contact.email }}" style="text-decoration: none; color: red; font-size: 36px;">
+    {{contact.email }}
+</a>
+<hr>
+
+<h3>Objet:</h3>
+<p style="color: blue; font-size: 30px;">
+    {{contact.objet }}
+</p>
+<hr>
+
+<h3>Message :</h3>
+<p style="color: blue; font-size: 24px;">
+    {{contact.message }}
+</p>

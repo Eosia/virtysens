@@ -1,0 +1,65 @@
+<!--menu de navigation start-->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="{{ path('home') }}" style="padding-left: 5vh">
+        <!--logo cliquable-->
+        <figure class="img-fluid">
+            <img src="{{ asset('assets/img/logo.png') }}" loading="lazy" alt="logo virtysens" style="width: 100px">
+            <!--figcaption est la legende d'une image-->
+            <figcaption class="hidden">
+                Virtysens | La capsule de voyage en VR
+            </figcaption>
+        </figure>
+        <div class="header-title mr-auto col-12 text-start" style="margin-top: -25px !important;">
+            <h1 class="text-info">
+                VIRTYSENS
+            </h1>
+            <h2 class="text-info">
+                La capsule de voyage en VR
+            </h2>
+        </div>
+    </a>
+
+    <button class="navbar-toggler border border-info text-info" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="nav-mobile navbar-toggler-icon"></span>
+    </button>
+
+    <div class="nav-menu collapse navbar-collapse mx-auto text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-info" href="{{ path('home') }}">ACCUEIL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-info" href="{{ path('produits') }}">PRODUITS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-info" href="{{ path('medias') }}">MEDIAS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-info" href="{{ path('histoire') }}">HISTOIRE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-info" href="{{ path('contact') }}">CONTACT</a>
+            </li>
+            <li class="nav-item hidden">
+                <a class="nav-link text-info" target="_blank" rel="noopener noreferrer nofollow" href="https://blog.virtysens.com">BLOG</a>
+            </li>
+            <li class="nav-item hidden">
+                <a class="nav-link text-info" href="{{ path('jobs') }}">JOBS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-info" href="https://en.virtysens.com" target="_blank" rel="noopener noreferrer nofollow" >
+                    <img src="{{ asset('assets/img/english.png') }}" loading="lazy" alt="virtysens in english" style="width: 30px;">
+                </a>
+            </li>
+
+            {% if app.user %}
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="{{ path('admin') }}">ADMIN</a>
+                </li>
+            {% endif %}
+
+
+        </ul>
+    </div>
+</nav>
+<!--menu de navigation stop-->

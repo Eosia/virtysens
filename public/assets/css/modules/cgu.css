@@ -1,0 +1,12 @@
+/*scss page cgu*/
+.text-cgu {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+
+.mail-cgu:hover {
+  color: red !important;
+}
+
+/*# sourceMappingURL=cgu.css.map */

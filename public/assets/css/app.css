@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/* breakpoints bootstrap -taille d'écran- */
+/*
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Small devices (portrait phones, 300px and up)
+@media (max-width: 575.98px) {
+
+}
+*/
+/* app.scss fichier de surcharge */
+/*imports des polices*/
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:wght@600&family=Noto+Sans+JP&family=Orbitron:wght@600&display=swap");
+/*utilisation des polices*/
+/*
+font-family: 'Balsamiq Sans', cursive;
+font-family: 'Lora', serif;
+font-family: 'Noto Sans JP', sans-serif;
+*/
+/*variables des polices*/
+/*lora*/
+/*noto*/
+/*balsamiq*/
+/*font virtysens*/
+/*variables des couleurs*/
+/*titre*/
+/*texte*/
+/*bouton cta*/
+/*reset html, body*/
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+  max-width: 100% !important;
+  height: 100% !important;
+}
+
+body {
+  position: relative !important;
+}
+
+main {
+  width: 100% !important;
+  height: auto;
+  margin: 0 auto !important;
+  max-width: 100% !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*class pour cacher des éléments*/
+.hidden {
+  display: none;
+}
+
+/*ligne de séparation dorée*/
+.ligne-or {
+  width: 65%;
+  height: 5px;
+  margin: 5vh auto;
+  text-align: center;
+  background-color: #E09813;
+}
+
+/*annule le style par defaut des balises em et strong*/
+.font-weight-bolder {
+  font-weight: 400 !important;
+}
+
+strong {
+  font-weight: 400 !important;
+}
+
+em {
+  font-style: normal !important;
+}
+
+/*variable tailles polices*/
+/*titre 3*/
+h3 {
+  font-family: "Lora", serif !important;
+  color: #1387c4 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 1.9rem !important;
+  }
+}
+@media (max-width: 1199px) {
+  h3 {
+    font-size: 1.6rem !important;
+  }
+}
+@media (max-width: 992px) {
+  h3 {
+    font-size: 1.4rem !important;
+  }
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 576px) {
+  h3 {
+    font-size: 1rem !important;
+  }
+}
+
+/*titre 4*/
+h4 {
+  font-family: "Lora", serif !important;
+  color: #1387c4 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+}
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 2.2rem !important;
+  }
+}
+@media (max-width: 1199px) {
+  h4 {
+    font-size: 1.8rem !important;
+  }
+}
+@media (min-width: 992px) {
+  h4 {
+    font-size: 1.4rem !important;
+  }
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 576px) {
+  h4 {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  h4 {
+    font-size: 0.9rem !important;
+  }
+}
+
+p {
+  font-family: "Noto Sans JP", sans-serif !important;
+  color: #07364e !important;
+  font-size: 1.4rem !important;
+}
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 1199px) {
+  p {
+    font-size: 1.1rem !important;
+  }
+}
+@media (max-width: 992px) {
+  p {
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 0.9rem !important;
+  }
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 1rem !important;
+  }
+}
+
+/*responsive de la taille de la police des cta*/
+.btn-cta {
+  border-radius: 10px !important;
+}
+@media (min-width: 768px) {
+  .btn-cta {
+    font-size: 1.2em !important;
+  }
+}
+@media (max-width: 767.99px) {
+  .btn-cta {
+    font-size: 0.9em !important;
+  }
+}
+
+/*pagination*/
+.pagination * {
+  color: #1387c4;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 1vh;
+  font-family: "Orbitron", sans-serif;
+}
+.pagination *:hover {
+  color: red;
+  text-decoration: none;
+}
+.pagination *:after {
+  color: #1387c4;
+}
+
+/*page de login*/
+.login-container {
+  min-height: 60vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+  align-items: flex-start !important;
+  min-height: 70vh !important;
+}
+
+/*# sourceMappingURL=app.css.map */

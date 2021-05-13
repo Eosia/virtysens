@@ -1,0 +1,106 @@
+/*scss page d'histoire*/
+
+/*design des citations de la page histoire*/
+.citation {
+    color: $color3 !important;
+    font-size: 1.2em !important;
+    font-weight: 900;
+    font-style: italic;
+    font-family: $font4 !important;
+    letter-spacing: 1px !important;
+}
+
+.histoire-img-legend {
+    font-size: 1rem !important;
+    height: 100% !important;
+    font-family: $font4;
+}
+
+.team-legend{
+    text-align: center !important;
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .team-legend{
+        font-size: 1em;
+        text-align: left;
+    }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    .histoire-section-3 {
+
+        .histoire-section-4-img-pc {
+            display:  visible;
+        }
+
+        .histoire-section-4-div-hidden {
+            display: none !important;
+        }
+
+    }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .team-legend{
+        font-size: 0.8em ;
+    }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+
+}
+
+// Small devices (portrait phones, 300px and up)
+@media (max-width: 575.98px) { 
+
+    /*design des citations de la page histoire en mobile*/
+    .citation {
+        color: $color3 !important;
+        font-size: 1em !important;
+    }
+
+    .histoire-section-3 {
+
+        .histoire-section-4-img-pc {
+            display:  none;
+        }
+
+        .histoire-section-4-div-hidden {
+            display: visible;
+            visibility: visible;
+        }
+
+    }
+
+}
+
+
+// Small devices (portrait phones, 300px and up)
+@media (max-width: 991.98px) { 
+
+
+    .histoire-section-3 {
+
+        .histoire-section-4-img-pc {
+            display:  none;
+        }
+
+        .histoire-section-4-div-hidden {
+            display: visible;
+            visibility: visible;
+        }
+
+    }
+
+}
+

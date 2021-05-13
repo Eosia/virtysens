@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}VirtySens | Virtysens dans la presse{% endblock %}
+
+{% block body %}
+
+    <!--main start-->
+    <main class="medias container-fluid mb-5">
+        <!--section 1 recherche start-->
+        <section class="media-section-1 container mx-auto text-center my-auto">
+            <div class="row d-flex justify-content-between align-items-center">
+                <h3 class="mx-auto text-center col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    Virtysens mis en avant dans différents medias
+                </h3>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 mt-2 mx-auto text-center">
+                    <label for="search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        Rechercher
+                    </label>
+                    <br>
+                    <div class="text-left">
+                        {{ form(form) }}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section 1 recherche stop-->
+
+        <!--ligne de separation doree start-->
+        <div class="ligne-or">
+        </div>
+        <!--ligne de separation doree stop-->
+
+        <!--section 2 notre histoire start-->
+        <section class="histoire-section-2 container-fluid mx-auto text-center">
+            <div class="row mx-auto text-center d-flex justify-content-center align-items-start">
+
+                {% for media in medias %}
+
+                <div class="card col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 m-2 py-2 text-center" style="width: 18rem;">
+                    {% if media.vignette %}
+                        <img src="{{ asset('assets/img/' ~ media.vignette) }}" loading="lazy" class="card-img-top media-img-show" alt="{{ media.titre }}">
+                    {% else %}
+                        <img src="{{ asset('assets/img/vignette-defaut.jpg') }}" loading="lazy" class="card-img-top media-img-show" alt="{{ media.titre }}">
+                    {% endif %}
+
+                    <div class="card-body text-left">
+                        <h5 class="card-title mb-2">{{ media.titre }}</h5>
+                        <p class="card-text">{{ media.contenu | striptags | truncate(200) | raw }}</p>
+                        <a href="{{ path('media_view', {'slug': media.slug}) }}" class="btn btn-primary">VOIR L'ARTICLE</a>
+                    </div>
+                </div>
+
+                {% endfor %}
+
+            </div>
+        </section>
+
+        <!--ligne de separation doree start-->
+        <div class="ligne-or">
+        </div>
+        <!--ligne de separation doree stop-->
+
+        <div class="pagination container my-2">
+            <div class="row mx-auto text-center">
+                <p class="text-center mx-auto">
+                    {{ knp_pagination_render(medias) }}
+                </p>
+            </div>
+        </div>
+
+
+
+    </main>
+    <!--main stop-->
+
+
+{% endblock %}

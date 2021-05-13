@@ -1,0 +1,150 @@
+/*scss page d'accueil*/
+
+
+.accueil-section-4-item-texte {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+    align-items: space-evenly !important;
+    height: 100% !important;
+    width: 100% !important;
+    margin: auto !important;
+}
+
+
+.accueil-section-5-item {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+
+        /*couleur de fond des nom des auteurs des témoignages*/
+        .card-temoignage-footer {
+            background-color: #2A93C9 !important;
+        }
+}
+
+.badge {
+    background-color: $color3 !important;
+    padding: 5px px !important;
+    margin: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/*taille de police des badges bleu des témoignages*/
+.font-badge {
+    font-size: 12px !important;
+    letter-spacing: 1px !important;
+    font-weight: 200 !important;
+    text-align: center !important;
+    line-height: 20px !important;
+    margin: auto;
+    padding: 10px 3px !important;
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .gallery-top {
+        display: visible;
+    }
+    .caroussel-top {
+        display: none;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    /*section 1 des 3 photos*/
+    .gallery-top {
+        display: visible;
+    }
+    .caroussel-top {
+        display: none;
+    }
+
+    .accueil-section-3 {
+
+        .home-section-4-img-pc {
+            display:  visible;
+        }
+
+        .home-section-4-div-hidden {
+            display: none !important;
+        }
+
+    }
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .gallery-top {
+        display: visible;
+    }
+    .caroussel-top {
+        display: none;
+    }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .gallery-top {
+        display: visible;
+    }
+    .caroussel-top {
+        display: none;
+    }
+
+
+}
+
+// Small devices (portrait phones, 300px and up)
+@media (max-width: 575.98px) { 
+    .accueil-section-1 {
+        .gallery-top {
+            display: none;
+        }
+        .caroussel-top {
+            display: visible;
+            visibility: visible;
+        }
+    }
+
+    .accueil-section-3 {
+
+        .home-section-4-img-pc {
+            display:  none;
+        }
+
+        .home-section-4-div-hidden {
+            display: visible;
+            visibility: visible;
+        }
+
+    }
+
+}
+
+
+// Small devices (portrait phones, 300px and up)
+@media (max-width: 991.98px) { 
+
+
+    .accueil-section-3 {
+
+        .home-section-4-img-pc {
+            display:  none;
+        }
+
+        .home-section-4-div-hidden {
+            display: visible;
+            visibility: visible;
+        }
+
+    }
+
+}
+

@@ -1,0 +1,15 @@
+/*sass page contact*/
+.contact a:hover {
+  text-decoration: none !important;
+  color: red !important;
+}
+
+@media (max-width: 768px) {
+  .link-xs {
+    font-size: 1.2rem !important;
+    text-align: center !important;
+    margin: auto !important;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

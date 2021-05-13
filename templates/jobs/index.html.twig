@@ -1,0 +1,51 @@
+{# page jobs #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}VirtySens | Nos offres d'emploi{% endblock %}
+
+{% block body %}
+
+    <!--main start-->
+    <main class="jobs container-fluid mb-5" style="min-height: 50vh !important;">
+        <!--section 1 qui sommes nous start-->
+        <section class="jobs-section-1 container mx-auto text-center my-5">
+            <div class="row">
+                <h3 class="mx-auto text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3">
+                    Nos offres d'emplois et de stage
+                </h3>
+            </div>
+        </section>
+        <!--section 1 qui sommes nous stop-->
+
+        <!--ligne de separation doree start-->
+        <div class="ligne-or">
+        </div>
+        <!--ligne de separation doree stop-->
+
+        <!--section 2 notre histoire start-->
+        <section class="jobs-section-2 container-fluid mx-auto text-center">
+            <div class="row mx-auto text-center d-flex justify-content-center align-items-start">
+
+                {% for job in jobs %}
+
+                    <div class="card col-12 col-sm-12 col-md-5 col-lg-3 col-xl-3 m-2 py-2 text-center" style="width: 18rem;">
+                        <div class="card-body text-left">
+                            <h5 class="card-title">{{ job.titre }}</h5>
+                            <p class="card-text">{{ job.texte | striptags | truncate(200) }}</p>
+                            <a href="{{ path('job_view', {'slug': job.slug}) }}" class="btn btn-primary">VOIR L'ANNONCE</a>
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+        </section>
+        <!--ligne de separation doree start-->
+        <div class="ligne-or">
+        </div>
+        <!--ligne de separation doree stop-->
+    </main>
+
+
+{% endblock %}
